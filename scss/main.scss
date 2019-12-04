@@ -1,0 +1,58 @@
+@import "variable";
+@import "nav";
+@import "helper";
+@import "intro";
+@import "questions";
+@import "downloads";
+@import "contact";
+@import "features";
+@import "footer";
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  .tabs {
+    flex-direction: column;
+    text-align: center;
+    & .tab {
+      padding: 0 1rem 1.5rem 1rem;
+    }
+  }
+
+  .bg {
+    height: 20rem;
+  }
+
+  #accordion {
+    width: 100%;
+  }
+
+  .intro,
+  .features {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .bg {
+    height: 17rem;
+
+    &-left {
+      transform: translate(-30%, 8%);
+    }
+  }
+}

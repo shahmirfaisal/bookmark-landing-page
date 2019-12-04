@@ -1,0 +1,41 @@
+.questions {
+  margin-top: 15rem;
+}
+
+#accordion {
+  width: 50rem;
+  margin: 5rem auto;
+}
+
+.card {
+  border: none;
+  border-top: 0.8px solid rgba(0, 0, 0, 0.301);
+  border-radius: 0px;
+
+  &-header {
+    border: none;
+    padding: 1.5rem 0.5rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover > .card-link {
+      color: $red;
+    }
+  }
+
+  &-link {
+    color: black;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__icon {
+    // position: absolute;
+    // right: 1.5rem;
+
+    float: right;
+  }
+}

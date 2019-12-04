@@ -1,0 +1,128 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+
+  &__details {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  &__item {
+  }
+  &__link {
+    font-size: 1.3rem;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    letter-spacing: 1px;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: none;
+      color: $red;
+    }
+  }
+
+  &__open {
+    font-size: 2.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &-social,
+  &__close,
+  &-img-sm,
+  &__open {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  @media (max-width: 770px) {
+    &__details {
+      transform: translateX(-100%);
+      z-index: 100;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(11, 18, 32, 0.911);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      overflow-y: auto;
+      transition: transform 0.4s ease-out;
+    }
+
+    &__link {
+      color: white;
+      padding: 1.5rem 0;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.781);
+      margin-left: 0;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+    }
+
+    &__item,
+    &__link,
+    &__list {
+      width: 100%;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin-bottom: auto;
+      margin-top: 2rem;
+    }
+
+    & .button {
+      background-color: transparent;
+      border: 2px solid white;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      &:hover {
+        background-color: #fff;
+        color: black;
+        border: 2px solid white;
+      }
+    }
+
+    &-social,
+    &__close,
+    &-img-sm,
+    &__open {
+      display: inline-block;
+      visibility: visible;
+      pointer-events: all;
+    }
+
+    &-social {
+      img:first-child {
+        margin-right: 2rem;
+      }
+    }
+
+    &__close {
+      font-size: 2rem;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    &-img-sm {
+      align-self: flex-start;
+    }
+  }
+}

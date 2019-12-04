@@ -1,0 +1,50 @@
+.contact {
+  background-color: $blue;
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+  margin-top: 10rem;
+
+  &__joined {
+    font-size: 1.3rem;
+    letter-spacing: 0.4rem;
+  }
+  &__heading {
+    font-size: 3rem;
+    margin: 2.5rem 0 3.5rem 0;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+
+    &__email {
+      display: inline-block;
+      font-family: inherit;
+      font-size: 1.35rem;
+      padding: 1rem 2rem;
+      letter-spacing: 1px;
+      margin-right: 13px;
+      border-radius: 5px;
+      flex-basis: 300px;
+      border: 0.4px solid rgba(0, 0, 0, 0.2);
+      outline: none;
+
+      &::placeholder {
+        opacity: 0.6;
+      }
+    }
+
+    @media (max-width: 492px) {
+      & {
+        flex-direction: column;
+
+        &__email {
+          margin-right: 0;
+          margin-bottom: 1rem;
+          flex-basis: 0;
+        }
+      }
+    }
+  }
+}

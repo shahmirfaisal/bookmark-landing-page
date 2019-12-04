@@ -1,0 +1,30 @@
+.intro {
+  &__button {
+    color: black;
+
+    &:hover {
+      border: 1.4px solid black;
+      color: black;
+    }
+  }
+
+  &__heading {
+    font-size: 4.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  & .button--blue {
+    margin-right: 1rem;
+  }
+
+  @media (max-width: 388px) {
+    & .button--blue {
+      margin-right: 0;
+    }
+  }
+}

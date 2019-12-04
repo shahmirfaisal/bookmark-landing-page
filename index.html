@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookmark Page</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <img src="./images/logo-bookmark.svg" alt="" class="nav__logo" />
+
+        <i id="navbar-open" class="nav__open fas fa-bars"></i>
+
+        <div class="nav__details">
+          <img
+            src="./images/logo-bookmark white.svg"
+            alt=""
+            class="nav-img-sm"
+          />
+          <i id="navbar-close" class="nav__close fas fa-times"></i>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link button button--red">LOGIN</a>
+            </li>
+          </ul>
+
+          <div class="nav-social">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <section class="intro row justify-content-between mt-5 pt-3">
+        <div class="col-lg-6 align-self-center mb-5 pb-5">
+          <h1 class="intro__heading">A Simple Bookmark Manager</h1>
+          <p class="paragraph mb-5 pb-3">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <a href="#" class="button button--blue mb-3">Get it on Chrome</a>
+          <a href="" class="button intro__button mb-3">Get it on Firefox</a>
+        </div>
+
+        <div class="col-md">
+          <img src="./images/illustration-hero.svg" alt="" class="intro__img" />
+          <!-- <div class="bg bg-right"></div> -->
+        </div>
+      </section>
+
+      <section class="features">
+        <h2 class="section-heading text-center">Features</h2>
+        <p class="paragraph text-center">
+          Our aim is to make it quick and easy for you to access your <br />
+          favourite websites. Your bookmarks sync between your devices <br />
+          so you can access them on the go.
+        </p>
+
+        <div class="tabs">
+          <div class="tab" id="tab-section-1">Simple Bookmarking</div>
+          <div class="tab" id="tab-section-2">Speedy Searching</div>
+          <div class="tab" id="tab-section-3">Easy Sharing</div>
+        </div>
+
+        <div
+          class="row tab-section tab-section-1 justify-content-between align-items-center"
+        >
+          <div class="col-md-6 mb-5 pb-5">
+            <img
+              src="./images/illustration-features-tab-1.svg"
+              alt="img"
+              class="tab-section__img"
+            />
+            <div class="bg bg-left"></div>
+          </div>
+
+          <div class="col-md-5">
+            <h2 class="section-heading mb-5">Bookmark in one click</h2>
+            <p class="paragraph mb-5">
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <a href="#" class="button button--blue">More Info</a>
+          </div>
+        </div>
+
+        <div
+          class="row tab-section tab-section-2 justify-content-between align-items-center"
+        >
+          <div class="col-md-5 mb-5 pb-5">
+            <img
+              src="./images/illustration-features-tab-2.svg"
+              alt="img"
+              class="tab-section__img"
+            />
+            <div class="bg bg-left"></div>
+          </div>
+
+          <div class="col-md-5">
+            <h2 class="section-heading mb-5">Intelligent Search</h2>
+            <p class="paragraph mb-5">
+              Our powerful search feature will help you find saved sites in no
+              time at all. No need to trawl through all of your bookmarks.
+            </p>
+            <a href="#" class="button button--blue">More Info</a>
+          </div>
+        </div>
+
+        <div
+          class="row tab-section tab-section-3 justify-content-between align-items-center"
+        >
+          <div class="col-md-5  mb-5 pb-5">
+            <img
+              src="./images/illustration-features-tab-3.svg"
+              alt="img"
+              class="tab-section__img"
+            />
+            <div class="bg bg-left"></div>
+          </div>
+
+          <div class="col-md-5">
+            <h2 class="section-heading mb-5">Share your bookmarks</h2>
+            <p class="paragraph mb-5">
+              Easily share your bookmarks and collections with others. Create a
+              shareable link that you can send at the click of a button.
+            </p>
+            <a href="#" class="button button--blue">More Info</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="downloads">
+        <h2 class="section-heading text-center">Download the extension</h2>
+        <p class="paragraph text-center">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          <br />
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+
+        <div class="extensions">
+          <div class="extension">
+            <img
+              src="./images/logo-chrome.svg"
+              alt="Chrome Logo"
+              class="extension__img"
+            />
+            <h4 class="extension__heading">Add to Chrome</h4>
+            <p class="extension__version">Minimum version 6.2</p>
+
+            <a href="#" class="button button--blue">Add & Install Extension</a>
+          </div>
+
+          <div class="extension">
+            <img
+              src="./images/logo-firefox.svg"
+              alt="Firefox Logo"
+              class="extension__img"
+            />
+            <h4 class="extension__heading">Add to Firefox</h4>
+            <p class="extension__version">Minimum version 5.5</p>
+
+            <a href="#" class="button button--blue">Add & Install Extension</a>
+          </div>
+
+          <div class="extension">
+            <img
+              src="./images/logo-opera.svg"
+              alt="Opera Logo"
+              class="extension__img"
+            />
+            <h4 class="extension__heading">Add to Opera</h4>
+            <p class="extension__version">Minimum version 4.6</p>
+
+            <a href="#" class="button button--blue">Add & Install Extension</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions">
+        <h2 class="section-heading text-center">
+          Frequently Asked Questions
+        </h2>
+        <p class="paragraph text-center">
+          Here are some of our FAQs. If you have any other questions <br />
+          you’d like answered please feel free to email us.
+        </p>
+
+        <div id="accordion">
+          <div class="card">
+            <div
+              class="card-header"
+              data-target="#collapse1"
+              data-toggle="collapse"
+            >
+              <a class="card-link" data-toggle="collapse" href="#collapse1"
+                >What is Bookmark?</a
+              >
+              <img
+                src="./images/icon-arrow.svg"
+                alt="Arrow Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <div class="collapse" id="collapse1">
+              <div class="card-body">
+                <p class="card-text paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-header"
+              data-target="#collapse2"
+              data-toggle="collapse"
+            >
+              <a class="card-link" data-toggle="collapse" href="#collapse2">
+                How can I request a new browser?</a
+              >
+              <img
+                src="./images/icon-arrow.svg"
+                alt="Arrow Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <div class="collapse" id="collapse2">
+              <div class="card-body">
+                <p class="card-text paragraph">
+                  Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                  massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                  luctus eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus
+                  eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdiet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-header"
+              data-target="#collapse3"
+              data-toggle="collapse"
+            >
+              <a class="card-link" data-toggle="collapse" href="#collapse3">
+                Is there a mobile app?</a
+              >
+              <img
+                src="./images/icon-arrow.svg"
+                alt="Arrow Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <div class="collapse" id="collapse3">
+              <div class="card-body">
+                <p class="card-text paragraph">
+                  Sed consectetur quam id neque fermentum accumsan. Praesent
+                  luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                  Cras in ligula quis est pharetra mattis sit amet pharetra
+                  purus. Sed sollicitudin ex et ultricies bibendum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-header"
+              data-target="#collapse4"
+              data-toggle="collapse"
+            >
+              <a class="card-link" data-toggle="collapse" href="#collapse4">
+                What about other Chromium browsers?</a
+              >
+              <img
+                src="./images/icon-arrow.svg"
+                alt="Arrow Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <div class="collapse" id="collapse4">
+              <div class="card-body">
+                <p class="card-text paragraph">
+                  Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                  placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                  gravida pellentesque non ut velit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact">
+      <div class="container">
+        <p class="contact__joined">35,000+ already joined</p>
+        <h2 class="contact__heading">
+          Stay up-to-date with what <br />
+          we're doing
+        </h2>
+
+        <form action="#" class="form">
+          <input
+            type="email"
+            placeholder="Enter your email address..."
+            class="form__email"
+            required
+          />
+          <button class="button button--red">Contact Us</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer-nav container">
+        <img
+          src="./images/logo-bookmark white.svg"
+          alt=""
+          class="footer-nav__logo"
+        />
+
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">
+              Features
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Pricing</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="footer-nav__social">
+          <img
+            src="./images/icon-facebook.svg"
+            alt=""
+            class="footer-nav__icon"
+          />
+          <img
+            src="./images/icon-twitter.svg"
+            alt=""
+            class="footer-nav__icon"
+          />
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

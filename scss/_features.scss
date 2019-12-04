@@ -1,0 +1,40 @@
+.features {
+  margin-top: 15rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+
+  & .tab {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+    padding: 0 3rem 2rem 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    &:first-child {
+      color: rgba(0, 0, 0, 0.8);
+      border-bottom: 3px solid $red;
+    }
+  }
+}
+
+.tab-section {
+  margin-top: 7rem;
+  &__img {
+    width: 100%;
+  }
+}
+
+.tab-section-2,
+.tab-section-3 {
+  display: none;
+}
